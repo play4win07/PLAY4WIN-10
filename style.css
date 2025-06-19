@@ -1,0 +1,100 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #00f0ff;
+  animation: backgroundShift 10s infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+.slogan {
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+  background-color: #111;
+  padding: 10px 0;
+  border-top: 1px solid #00f0ff;
+  border-bottom: 1px solid #00f0ff;
+}
+
+.nav-menu li a {
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.tabs button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #00f0ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+  background-color: #00aacc;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #00f0ff;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.social-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #00f0ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons a:hover {
+  background-color: #007c99;
+}
